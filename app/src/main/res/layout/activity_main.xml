@@ -4,31 +4,37 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.shixia.moduletest.MainActivity"
+    tools:context=".MainActivity"
     android:orientation="vertical">
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/btn_read_phone_number"
-        android:text="read my phone number"/>
+        android:text="模拟手机的IMEI"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/btn_activity_calendar"
-        android:text="calendar activity"/>
+        android:text="自定义可左右滑动的日历"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/btn_activity_number_picker"
-        android:text="number picker activity"/>
+        android:text="滚轮选择器"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/btn_activity_tree_recycler"
         android:text="地区多级选择列表"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_activity_pic_preview"
+        android:text="图片预览"/>
 
 </LinearLayout>

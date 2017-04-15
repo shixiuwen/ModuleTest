@@ -24,6 +24,8 @@
         <activity android:name=".numberpicker.NumberPickerActivity"/>
 
         <activity android:name=".module_tree.RecyclerTreeActivity"/>
+
+        <activity android:name=".module_pcpre.PicPreviewActivity"/>
     </application>
 
 </manifest>
