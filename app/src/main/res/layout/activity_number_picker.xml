@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <shixia.moduletest.numberpicker.NumberPicker
+        android:background="#b7658cb3"
+        android:id="@+id/numberPicker_hour"
+        android:layout_width="400px"
+        android:layout_height="400px"
+        android:theme="@style/NumberPickerTheme"
+        app:internalLayout="@layout/number_picker_with_selector_wheel" />
+
+</LinearLayout>
