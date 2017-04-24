@@ -38,27 +38,79 @@ public class RecyclerTreeActivity extends AppCompatActivity {
         rvTree.setAdapter(new RecyclerAdapter(this,data));
     }
 
-    private String json = "{\"status\":\"200\",\n" +
-            " \"info\":\"successful\",\n" +
-            " \"data\":[{\"brand\":\"LEVEL_01_A\"," +
-            "\"child01\":[{\"child01Brand\":\"LEVEL_02_A\"," +
-            "\"child02\":[\"LEVEL_03_A\",\"LEVEL_03_B\"," +
-            "\"LEVEL_03_C\",\"LEVEL_03_D\"]}," +
-            "{\"child01Brand\":\"LEVEL_02_B\"," +
-            "\"child02\":[\"LEVEL_03_AA\"," +
-            "\"LEVEL_03_BB\",\"LEVEL_03_CC\"," +
-            "\"LEVEL_03_DD\"]}]},{\"brand\":" +
-            "\"LEVEL_01_B\",\"child01\":[{\"child01Brand\":" +
-            "\"LEVEL_02_AA\",\"child02\":[\"LEVEL_033_A\"," +
-            "\"LEVEL_033_B\",\"LEVEL_033_C\",\"LEVEL_033_D\"]}," +
-            "{\"child01Brand\":\"LEVEL_02_BB\",\"child02\":" +
-            "[\"LEVEL_033_AA\",\"LEVEL_033_BB\",\"LEVEL_033_CC\"," +
-            "\"LEVEL_033_DD\"]}]},{\"brand\":\"LEVEL_01_C\"," +
-            "\"child01\":[{\"child01Brand\":\"LEVEL_02_AAA\"," +
-            "\"child02\":[\"LEVEL_0333_A\",\"LEVEL_0333_B\"," +
-            "\"LEVEL_0333_C\",\"LEVEL_0333_D\"]}," +
-            "{\"child01Brand\":\"LEVEL_02_BBB\"," +
-            "\"child02\":[\"LEVEL_0333_AA\"," +
-            "\"LEVEL_0333_BB\",\"LEVEL_0333_CC\"," +
-            "\"LEVEL_0333_DD\"]}]}]}";
+    private String json = "{\n" +
+            "    \"status\":\"200\",\n" +
+            "    \"info\":\"successful\",\n" +
+            "    \"data\":[\n" +
+            "        {\n" +
+            "            \"brand\":\"LEVEL_01_A\",\n" +
+            "            \"child01\":[\n" +
+            "                {\n" +
+            "                    \"child01Brand\":\"LEVEL_02_A\",\n" +
+            "                    \"child02\":[\n" +
+            "                        \"LEVEL_03_A\",\n" +
+            "                        \"LEVEL_03_B\",\n" +
+            "                        \"LEVEL_03_C\",\n" +
+            "                        \"LEVEL_03_D\"\n" +
+            "                    ]\n" +
+            "                },\n" +
+            "                {\n" +
+            "                    \"child01Brand\":\"LEVEL_02_B\",\n" +
+            "                    \"child02\":[\n" +
+            "                        \"LEVEL_03_AA\",\n" +
+            "                        \"LEVEL_03_BB\",\n" +
+            "                        \"LEVEL_03_CC\",\n" +
+            "                        \"LEVEL_03_DD\"\n" +
+            "                    ]\n" +
+            "                }\n" +
+            "            ]\n" +
+            "        },\n" +
+            "        {\n" +
+            "            \"brand\":\"LEVEL_01_B\",\n" +
+            "            \"child01\":[\n" +
+            "                {\n" +
+            "                    \"child01Brand\":\"LEVEL_02_AA\",\n" +
+            "                    \"child02\":[\n" +
+            "                        \"LEVEL_033_A\",\n" +
+            "                        \"LEVEL_033_B\",\n" +
+            "                        \"LEVEL_033_C\",\n" +
+            "                        \"LEVEL_033_D\"\n" +
+            "                    ]\n" +
+            "                },\n" +
+            "                {\n" +
+            "                    \"child01Brand\":\"LEVEL_02_BB\",\n" +
+            "                    \"child02\":[\n" +
+            "                        \"LEVEL_033_AA\",\n" +
+            "                        \"LEVEL_033_BB\",\n" +
+            "                        \"LEVEL_033_CC\",\n" +
+            "                        \"LEVEL_033_DD\"\n" +
+            "                    ]\n" +
+            "                }\n" +
+            "            ]\n" +
+            "        },\n" +
+            "        {\n" +
+            "            \"brand\":\"LEVEL_01_C\",\n" +
+            "            \"child01\":[\n" +
+            "                {\n" +
+            "                    \"child01Brand\":\"LEVEL_02_AAA\",\n" +
+            "                    \"child02\":[\n" +
+            "                        \"LEVEL_0333_A\",\n" +
+            "                        \"LEVEL_0333_B\",\n" +
+            "                        \"LEVEL_0333_C\",\n" +
+            "                        \"LEVEL_0333_D\"\n" +
+            "                    ]\n" +
+            "                },\n" +
+            "                {\n" +
+            "                    \"child01Brand\":\"LEVEL_02_BBB\",\n" +
+            "                    \"child02\":[\n" +
+            "                        \"LEVEL_0333_AA\",\n" +
+            "                        \"LEVEL_0333_BB\",\n" +
+            "                        \"LEVEL_0333_CC\",\n" +
+            "                        \"LEVEL_0333_DD\"\n" +
+            "                    ]\n" +
+            "                }\n" +
+            "            ]\n" +
+            "        }\n" +
+            "    ]\n" +
+            "}";
 }

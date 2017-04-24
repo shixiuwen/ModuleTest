@@ -37,4 +37,10 @@
         android:id="@+id/btn_activity_pic_preview"
         android:text="图片预览"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_activity_save_pic"
+        android:text="下载图片"/>
+
 </LinearLayout>

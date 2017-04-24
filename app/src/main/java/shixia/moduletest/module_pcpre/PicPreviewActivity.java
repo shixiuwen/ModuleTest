@@ -30,8 +30,7 @@ public class PicPreviewActivity extends AppCompatActivity
 			@Override
 			public Object instantiateItem(ViewGroup container, int position)
 			{
-				ZoomImageView imageView = new ZoomImageView(
-						getApplicationContext());
+				ZoomImageView imageView = new ZoomImageView(getApplicationContext());
 				imageView.setImageResource(mImgs[position]);
 				container.addView(imageView);
 				mImageViews[position] = imageView;

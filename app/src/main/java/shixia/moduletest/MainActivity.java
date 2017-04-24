@@ -9,6 +9,7 @@ import android.widget.Button;
 import shixia.moduletest.module_calendar.CalendarActivity;
 import shixia.moduletest.module_imei.IMEIActivity;
 import shixia.moduletest.module_pcpre.PicPreviewActivity;
+import shixia.moduletest.module_save_pic.SavePicActivity;
 import shixia.moduletest.module_tree.RecyclerTreeActivity;
 import shixia.moduletest.numberpicker.NumberPickerActivity;
 
@@ -23,6 +24,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button btnActivityTreeRecycler;
 
     private Button btnActivityPicPreview;
+
+    private Button btnActivitySavePic;
 
 
     @Override
@@ -40,6 +43,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         btnActivityPicPreview = (Button) findViewById(R.id.btn_activity_pic_preview);
 
+        btnActivitySavePic = (Button) findViewById(R.id.btn_activity_save_pic);
+
         initClickEvent();
     }
 
@@ -49,6 +54,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnActivityNumberPicker.setOnClickListener(this);
         btnActivityTreeRecycler.setOnClickListener(this);
         btnActivityPicPreview.setOnClickListener(this);
+        btnActivitySavePic.setOnClickListener(this);
     }
 
     @Override
@@ -74,6 +80,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_activity_pic_preview:
                 Intent pcPreviewIntent = new Intent(this,PicPreviewActivity.class);
                 startActivity(pcPreviewIntent);
+                break;
+            case R.id.btn_activity_save_pic:
+                Intent savePicIntent = new Intent(this,SavePicActivity.class);
+                startActivity(savePicIntent);
                 break;
             default:
                 break;
