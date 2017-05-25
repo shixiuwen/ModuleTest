@@ -31,6 +31,8 @@
         <activity android:name=".module_pcpre.PicPreviewActivity"/>
 
         <activity android:name=".module_save_pic.SavePicActivity"/>
+
+        <activity android:name=".module_input_limit.InputLimitActivity"/>
     </application>
 
 </manifest>

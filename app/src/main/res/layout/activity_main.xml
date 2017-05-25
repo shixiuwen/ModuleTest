@@ -43,4 +43,10 @@
         android:id="@+id/btn_activity_save_pic"
         android:text="下载图片"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_activity_input_limit"
+        android:text="输入限制"/>
+
 </LinearLayout>

@@ -8,6 +8,7 @@ import android.widget.Button;
 
 import shixia.moduletest.module_calendar.CalendarActivity;
 import shixia.moduletest.module_imei.IMEIActivity;
+import shixia.moduletest.module_input_limit.InputLimitActivity;
 import shixia.moduletest.module_pcpre.PicPreviewActivity;
 import shixia.moduletest.module_save_pic.SavePicActivity;
 import shixia.moduletest.module_tree.RecyclerTreeActivity;
@@ -27,6 +28,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private Button btnActivitySavePic;
 
+    private Button btnActivityInputLimit;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +48,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         btnActivitySavePic = (Button) findViewById(R.id.btn_activity_save_pic);
 
+        btnActivityInputLimit = (Button) findViewById(R.id.btn_activity_input_limit);
+
         initClickEvent();
     }
 
@@ -55,6 +60,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnActivityTreeRecycler.setOnClickListener(this);
         btnActivityPicPreview.setOnClickListener(this);
         btnActivitySavePic.setOnClickListener(this);
+        btnActivityInputLimit.setOnClickListener(this);
     }
 
     @Override
@@ -84,6 +90,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_activity_save_pic:
                 Intent savePicIntent = new Intent(this,SavePicActivity.class);
                 startActivity(savePicIntent);
+                break;
+            case R.id.btn_activity_input_limit:
+                Intent inputLimitActivity = new Intent(this,InputLimitActivity.class);
+                startActivity(inputLimitActivity);
                 break;
             default:
                 break;
