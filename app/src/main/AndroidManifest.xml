@@ -33,6 +33,8 @@
         <activity android:name=".module_save_pic.SavePicActivity"/>
 
         <activity android:name=".module_input_limit.InputLimitActivity"/>
+
+        <activity android:name=".module_screem.ScreenActivity"/>
     </application>
 
 </manifest>

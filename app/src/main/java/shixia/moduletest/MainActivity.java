@@ -11,6 +11,7 @@ import shixia.moduletest.module_imei.IMEIActivity;
 import shixia.moduletest.module_input_limit.InputLimitActivity;
 import shixia.moduletest.module_pcpre.PicPreviewActivity;
 import shixia.moduletest.module_save_pic.SavePicActivity;
+import shixia.moduletest.module_screem.ScreenActivity;
 import shixia.moduletest.module_tree.RecyclerTreeActivity;
 import shixia.moduletest.numberpicker.NumberPickerActivity;
 
@@ -27,6 +28,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button btnActivityPicPreview;
 
     private Button btnActivitySavePic;
+
+    private Button btnActivityScreen;
 
     private Button btnActivityInputLimit;
 
@@ -50,6 +53,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         btnActivityInputLimit = (Button) findViewById(R.id.btn_activity_input_limit);
 
+        btnActivityScreen = (Button) findViewById(R.id.btn_activity_screen);
+
         initClickEvent();
     }
 
@@ -61,6 +66,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnActivityPicPreview.setOnClickListener(this);
         btnActivitySavePic.setOnClickListener(this);
         btnActivityInputLimit.setOnClickListener(this);
+        btnActivityScreen.setOnClickListener(this);
     }
 
     @Override
@@ -94,6 +100,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_activity_input_limit:
                 Intent inputLimitActivity = new Intent(this,InputLimitActivity.class);
                 startActivity(inputLimitActivity);
+                break;
+            case R.id.btn_activity_screen:
+                Intent screenActivity = new Intent(this,ScreenActivity.class);
+                startActivity(screenActivity);
                 break;
             default:
                 break;

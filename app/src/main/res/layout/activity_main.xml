@@ -49,4 +49,10 @@
         android:id="@+id/btn_activity_input_limit"
         android:text="输入限制"/>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_activity_screen"
+        android:text="生成屏幕适配文件"/>
+
 </LinearLayout>
